@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: termux-app
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    buildCommand: ""
+    startCommand: ""
+    autoDeploy: true
+    branches:
+      - main
